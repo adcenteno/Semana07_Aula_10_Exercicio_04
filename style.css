@@ -1,0 +1,179 @@
+/*********************************************************************************/
+*{
+	margin: 0px;
+	padding: 0px;
+	outline-style: none;
+	border-style: none;
+	box-sizing: border-box;
+}
+
+body{
+	font-family: 'Raleway', sans-serif;
+	font-style: normal;
+	font-size: 100%;
+	color: #000000;
+}
+
+ul{
+	list-style-type: none;
+}
+
+.container{
+	display: flex;
+	width: 50%;
+	height: 100%;
+	margin: 0px auto 0px auto;
+}
+/*********************************************************************/
+#blockOfErrors{
+	width: 100%;
+	background-color: #0A3487;
+}
+
+#containerOfErrors{
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+	background-color: #000;
+}
+
+#listOfErrors > li{
+	font-size: 1.25em;
+	font-weight: 700;
+	padding: 0.75em 1.75em;
+	letter-spacing: 0.30em;
+	color: #3DF50A;
+}
+
+#containerOfErrors, #containerOfPersons, #containerOfComparisons{
+	border-style: none none solid none;
+	border-width: 4px;
+	border-color: #0A3487;
+}
+/*******************************************************************************************/
+#blockOfForm{
+	width: 100%;
+	background-color: #0A3487;
+}
+
+#containerOfForm{
+	flex-direction: column;
+	justify-content: space-between;
+	align-items: center;
+	background-color: #000;
+	border-style: solid none solid none;
+	border-width: 4px;
+	border-color: #0A3487;
+}
+
+#containerOfButton{
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+	width: 100%;
+}
+
+#uniqueForm{
+	flex-direction: column;
+	justify-content: space-between;
+	align-items: center;
+	width: 100%;
+}
+
+input[type = text]{
+	width: 90%;
+	margin: 0px 0px 0px 5%;
+	padding: 2.5%;
+	border-style: solid
+	border-color: #000;
+	border-width: 5px;
+	border-radius: 4px;
+	font-size: 1.25em;
+	text-transform: uppercase;
+}
+
+#lname, #age, #height, #weight{
+	background-color: #B6BAB5;
+}
+
+label{
+	font-size: 1.25em;
+	font-weight: 600;
+	display: block;
+	padding: 5% 0px 0px 5%;
+	color: #FFF;
+}
+
+input[type=button]{
+	display: block;
+	font-size: 0.95em;
+	font-weight: 600;
+	padding: 0.95em 0.95em;
+	text-decoration: none;
+	background-color: #595A5C;
+	color: #FFFFFF;
+	margin: 5% auto 5% auto;
+	border-radius: 6px;
+	cursor: pointer;
+}
+/*******************************************************************************************/
+#blockOfPersons{
+	width: 100%;
+	background-color: #0A3487;
+}
+
+#containerOfPersons{
+	flex-direction: column;
+	justify-content: space-between;
+	align-items: flex-start;
+	background-color: #000;
+}
+
+#listOfPersons > li{
+	font-size: 1.25em;
+	font-weight: 700;
+	padding: 0.75em 1.75em;
+	letter-spacing: 0.30em;
+	color: #FFF;
+}
+
+/******************************************************************************************/
+#blockOfComparisons{
+	width: 100%;
+	background-color: #0A3487;
+}
+
+#containerOfComparisons{
+	flex-direction: column;
+	justify-content: space-between;
+	align-items: center;
+	background-color: #000;
+}
+
+#listOfComparisons > li{
+	font-size: 1.25em;
+	font-weight: 700;
+	padding: 0.75em 1.75em;
+	letter-spacing: 0.30em;
+	color: #FFF;
+}
+/******************************************************************************************/
+@media screen and (max-width: 415px){
+	body{
+		font-size: 50%;
+	}
+
+	.container{
+		width: 95%;
+	}
+}
+
+@media screen and (max-width: 770px) and (min-width: 415px){
+	body{
+		font-size: 50%;
+	}
+
+	.container{
+		width: 50%;
+	}
+}
